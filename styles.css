@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Graffiti";
+    src: url("./font/DonGraffiti.otf");
+  }
+
+html {
+    background-image: url("./images/wall.jpg");
+    background-repeat: no-repeat;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.bookPicker{
+    align-self: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+.choices{
+    color: white;
+    font-family: "Graffiti", "Times New Roman";
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 6px 6px #0c0303;
+}
+
+select{
+    background: linear-gradient(#803334, 10%, #441b1b, #803334 );
+    border: 2px solid black;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: .25em;
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 12px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  button{
+    background: linear-gradient(#441b1b, #66292a);
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: .25em;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  button:hover{
+    background: white;
+    border: 2px solid #441b1b;
+    color: #441b1b;
+    cursor: pointer;
+    font-size: .25em;
+    font-weight: bold;
+    width: 100%;
+  }
