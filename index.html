@@ -16,7 +16,7 @@
                 <option value="BL">Black Lotus (Poetry)</option>
                 <option value="19">19: A Hero's Rise (Novel)</option>
             </select><br>
-            <button download="selection" target="_blank">Download Book</button>
+            <button onclick="downloadChoice()">Download Book</button>
         </form>
         <div></div>
     </div>
@@ -24,5 +24,16 @@
 </body>
 
 <script>
+    function downloadChoice() {
+        let userChoice = document.getElementById("choice").value;
+        if (userChoice ==="EARHT"){
+            console.log('wHY');
+            window.open("./books/EARHT.pdf", "Even A Rose Has Thorns",);
+        }else if (userChoice === "BL"){
+            window.open("./books/BL.pdf", "Black Lotus",);
+        }else if (userChoice === "19"){
+            window.open("./books/19AHR.pdf", "Even A Rose Has Thorns",);
+        }
+    }
 </script>
 </html>
