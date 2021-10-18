@@ -14,13 +14,20 @@
         <li><a class="menuItem" href="https://erinmoyerportfolio.com/" target="_blank">Web Portfolio</a></li>
     </ul>
     <div class="hamburger">
-        <div class="menuIcon"><img src="./images/hamburger.svg"></div>
-        <div class="closeIcon"><img src="./images/close.svg"></div>
+        <div class="menuIcon"><img src="./images/hamburger.svg" height="60px"></div>
+        <div class="closeIcon"><img src="./images/close.svg" height="60px"></div>
     </div>
+
+
+    <div id="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
 
     <div class="bookPicker">
-        <div></div>
+        <div class="spacer"></div>
         <form class="choices">
             <label for="choice"> Select a book </label><br>
             <select id="choice" name="book-choice">
@@ -30,7 +37,7 @@
             </select><br>
             <button onclick="downloadChoice()">Download Book</button>
         </form>
-        <div></div>
+        <div class="spacer"></div>
     </div>
 
 </body>
@@ -73,5 +80,6 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+
 </script>
 </html>
