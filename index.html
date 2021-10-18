@@ -7,6 +7,18 @@
     </head>
 
 <body>
+    <nav>
+    <ul class="menu">
+        <li><a class="menuItem" href="https://www.amazon.com/Erin-Moyer/e/B086VYGJ5S" target="_blank">About Author</a></li>
+        <li><a class="menuItem" href="#">Book Artwork and Extras</a></li>
+        <li><a class="menuItem" href="https://erinmoyerportfolio.com/" target="_blank">Web Portfolio</a></li>
+    </ul>
+    <div class="hamburger">
+        <div class="menuIcon"><img src="./images/hamburger.svg"></div>
+        <div class="closeIcon"><img src="./images/close.svg"></div>
+    </div>
+    </nav>
+
     <div class="bookPicker">
         <div></div>
         <form class="choices">
@@ -35,5 +47,31 @@
             window.open("./books/19AHR.pdf", "Even A Rose Has Thorns",);
         }
     }
+
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
 </script>
 </html>
