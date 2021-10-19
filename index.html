@@ -5,21 +5,19 @@
         <meta charset="utf-8"/>
         <title>Erin Jay Moyer.com</title> 
     </head>
-
 <body>
     <nav>
     <ul class="menu">
         <li><a class="menuItem" href="https://www.amazon.com/Erin-Moyer/e/B086VYGJ5S" target="_blank">About Author</a></li>
-        <li><a class="menuItem" href="#">Book Artwork and Extras</a></li>
+        <li><a class="menuItem" href="extras.html">Book Artwork and Extras</a></li>
         <li><a class="menuItem" href="https://erinmoyerportfolio.com/" target="_blank">Web Portfolio</a></li>
     </ul>
     <div class="menu-button">
         <div class="menu-button-burger"></div>
     </div>
-
     </nav>
 
-    <div class="bookPicker">
+    <div class="book-picker">
         <div class="spacer"></div>
         <form class="choices">
             <label for="choice"> Select a book </label><br>
@@ -32,56 +30,6 @@
         </form>
         <div class="spacer"></div>
     </div>
-
 </body>
-
-<script>
-    function downloadChoice() {
-        let userChoice = document.getElementById("choice").value;
-        if (userChoice ==="EARHT"){
-            console.log('wHY');
-            window.open("./books/EARHT.pdf", "Even A Rose Has Thorns",);
-        }else if (userChoice === "BL"){
-            window.open("./books/BL.pdf", "Black Lotus",);
-        }else if (userChoice === "19"){
-            window.open("./books/19AHR.pdf", "Even A Rose Has Thorns",);
-        }
-    }
-
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-
-const hamburger= document.querySelector(".menu-button");
-
-
-function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-  } else {
-    menu.classList.add("showMenu");
-  }
-}
-
-hamburger.addEventListener("click", toggleMenu);
-
-menuItems.forEach( 
-  function(menuItem) { 
-    menuItem.addEventListener("click", toggleMenu);
-  }
-)
-
-// menu hamburger animation 
-const menuButton = document.querySelector('.menu-button');
-let menuOpen = false;
-menuButton.addEventListener('click', () => {
-    if(!menuOpen) {
-        menuButton.classList.add('open');
-        menuOpen = true;
-    }else {
-        menuButton.classList.remove('open');
-        menuOpen = false;
-    }
-});
-
-</script>
+<script src="bookpage.js"></script>
 </html>
