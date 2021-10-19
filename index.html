@@ -13,17 +13,10 @@
         <li><a class="menuItem" href="#">Book Artwork and Extras</a></li>
         <li><a class="menuItem" href="https://erinmoyerportfolio.com/" target="_blank">Web Portfolio</a></li>
     </ul>
-    <div class="hamburger">
-        <div class="menuIcon"><img src="./images/hamburger.svg" height="60px"></div>
-        <div class="closeIcon"><img src="./images/close.svg" height="60px"></div>
+    <div class="menu-button">
+        <div class="menu-button-burger"></div>
     </div>
 
-
-    <div id="nav-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </nav>
 
     <div class="bookPicker">
@@ -57,19 +50,15 @@
 
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
+
+const hamburger= document.querySelector(".menu-button");
+
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
   } else {
     menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
   }
 }
 
@@ -80,6 +69,19 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+
+// menu hamburger animation 
+const menuButton = document.querySelector('.menu-button');
+let menuOpen = false;
+menuButton.addEventListener('click', () => {
+    if(!menuOpen) {
+        menuButton.classList.add('open');
+        menuOpen = true;
+    }else {
+        menuButton.classList.remove('open');
+        menuOpen = false;
+    }
+});
 
 </script>
 </html>

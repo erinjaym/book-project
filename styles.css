@@ -68,21 +68,6 @@ select{
     width: 100%;
   }
 
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    min-width: 0;
-    left: 50%;
-    position: fixed;
-    top: 1rem;
-    transform: translateX(-50%);
-    z-index: 100;
-  }
-
-  .closeIcon {
-    display: none;
-  }
-
   .menu {
     align-items: center;
     background: black;
@@ -115,10 +100,70 @@ select{
     transform: translateY(0);
   }
 
-  .menuIcon{
-    display: flex;
-  }
-
 .spacer{
   height: 1vh;
+}
+
+/* Hamburger Menu */
+
+.menu-button{
+  cursor: pointer;
+position: relative;
+display: flex;
+flex-shrink: 1;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 55px;
+left: 50%;
+top: 0;
+transform: translateX(-50%);
+transition: all .5s ease-in-out;
+z-index: 100;
+}
+
+.menu-button-burger{
+width: 50px;
+height: 6px;
+background: #fff;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(255,101,47,.2);
+transition: all .5s ease-in-out;
+z-index: 100;
+}
+
+.menu-button-burger::before, 
+.menu-button-burger::after {
+content: '';
+position: absolute;
+width: 50px;
+height: 6px;
+background: #fff;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(255,101,47,.2);
+transition: all .5s ease-in-out;
+}
+
+.menu-button-burger::before{
+transform: translateY(-16px);
+}
+
+.menu-button-burger::after{
+transform: translateY(16px);
+}
+
+/* Animation */
+
+.menu-button.open .menu-button-burger{
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-button.open .menu-button-burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-button.open .menu-button-burger::after{
+ transform: rotate(-45deg) translate(35px, 35px);
 }
