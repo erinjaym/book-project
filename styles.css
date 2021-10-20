@@ -191,3 +191,132 @@ select{
   transform: translate(-40vw, -10vh);
   width: 80vw;
 }
+
+/* Slideshow POPUP */
+
+.slider-popup {
+  background-color: rgba(8, 8, 8, 0.11);
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  height: 90vh;
+  left: 50px;
+  position: absolute;
+  right: 50px;
+  top: 10vh;
+}
+
+.slider-middle {
+  align-items: center;
+  display: none;
+  grid-row: 0.9fr 0.1fr;
+  justify-items: center;
+}
+
+.slider-left {
+  align-items: center;
+  display: none;
+  justify-items: center;
+  opacity: 50%;
+}
+
+.slider-right {
+  align-items: center;
+  display: none;
+  justify-items: center;
+  opacity: 50%;
+}
+
+.slider-image {
+  display: none;
+  height: 100px;
+  width: 100px;
+}
+
+.slider-image-visible {
+  display: grid;
+  height: 80vh;
+  max-width: 100%;
+}
+
+.arrow-right {
+  border-bottom: 16vw solid transparent;
+  border-left: 16vw solid rgb(77, 85, 77);
+  border-top: 16vw solid transparent;
+  height: 0;
+  width: 0;
+}
+
+.arrow-left {
+  border-bottom: 160px solid transparent;
+  border-right: 160px solid rgb(77, 85, 77);
+  border-top: 160px solid transparent;
+  height: 0px;
+  width: 0px;
+}
+
+.progress-circle {
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+.progress-circle:hover {
+  background-color: rgb(14, 13, 13);
+  border-radius: 50%;
+  display: inline-block;
+  height: 25px;
+  transition-duration: 1.5s;
+  width: 25px;
+}
+.progress-circle-active {
+  background-color: rgb(5, 5, 5);
+  border: solid 1px white;
+  border-radius: 50%;
+  display: inline-block;
+  height: 25px;
+  transition-duration: 1.5s;
+  width: 25px;
+}
+
+.close-slider {
+  background-color: #bbb;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+.close-slider:hover {
+  background-color: rgb(87, 1, 1);
+  display: inline-block;
+  height: 25px;
+  transition-duration: 1s;
+  width: 25px;
+}
+
+.pause {
+  background-color: #bbb;
+  display: inline-block;
+  height: 25px;
+  transition-duration: 1s;
+  width: 25px;
+}
+
+.pause:hover {
+  background-color: rgb(179, 82, 3);
+  display: inline-block;
+  height: 25px;
+  transition-duration: 1s;
+  width: 25px;
+}
+
+.paused {
+  background-color: rgb(179, 82, 3);
+  display: inline-block;
+  height: 25px;
+  transition-duration: 1s;
+  width: 25px;
+}
+
