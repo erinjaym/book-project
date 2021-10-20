@@ -167,3 +167,27 @@ select{
 .menu-button.open .menu-button-burger::after{
  transform: rotate(-45deg) translate(35px, 35px);
 }
+
+/* Extras Page */
+
+.image-thumbnail {
+  border: solid white 2px;
+  border-radius: 1%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.gallery {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 1vh;
+  grid-column-gap: 1vw;
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  transform: translate(-40vw, -10vh);
+  width: 80vw;
+}
