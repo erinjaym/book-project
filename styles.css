@@ -198,7 +198,7 @@ select{
   background-color: rgba(8, 8, 8, 0.11);
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr .2fr;
   height: 90vh;
   right: 0;
   left: 0;
@@ -217,6 +217,7 @@ select{
   display: none;
   justify-items: right;
   opacity: 70%;
+  grid-row: 0.95fr 0.05fr;
 }
 
 .slider-right {
@@ -327,4 +328,22 @@ select{
   width: 25px;
 }
 
+  /* Adjustment of menu and slideshow display on mobile*/
 
+  @media screen and (min-width: 980px) /* Desktop */ {
+
+  }
+
+  @media screen  and (max-width: 979px) /* Tablet */ {
+  .menu a{
+    font-size: 8vw;
+  }
+  }
+
+  @media screen and (max-width: 500px) /* Mobile */ {
+
+  .menu a{
+    font-size: 8vw;
+  }
+
+  }
