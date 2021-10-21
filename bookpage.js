@@ -29,6 +29,7 @@ hamburger.addEventListener("click", toggleMenu);
 menuItems.forEach( 
     function(menuItem) { 
         menuItem.addEventListener("click", toggleMenu);
+        menuItem.addEventListener("click", hamburgerToggle);
     }
 )
 
@@ -36,7 +37,7 @@ menuItems.forEach(
 const menuButton = document.querySelector('.menu-button');
 let menuOpen = false;
 
-menuButton.addEventListener('click', () => {
+function hamburgerToggle () {
     if(!menuOpen) {
         menuButton.classList.add('open');
         menuOpen = true;
@@ -44,4 +45,6 @@ menuButton.addEventListener('click', () => {
         menuButton.classList.remove('open');
         menuOpen = false;
     }
-});
+}
+
+menuButton.addEventListener('click',hamburgerToggle);

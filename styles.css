@@ -200,10 +200,9 @@ select{
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 1fr;
   height: 90vh;
-  left: 50px;
-  position: absolute;
-  right: 50px;
-  top: 10vh;
+  right: 0;
+  left: 0;
+  position: relative;
 }
 
 .slider-middle {
@@ -216,15 +215,15 @@ select{
 .slider-left {
   align-items: center;
   display: none;
-  justify-items: center;
-  opacity: 50%;
+  justify-items: right;
+  opacity: 70%;
 }
 
 .slider-right {
   align-items: center;
   display: none;
-  justify-items: center;
-  opacity: 50%;
+  justify-items: left;
+  opacity: 70%;
 }
 
 .slider-image {
@@ -235,7 +234,7 @@ select{
 
 .slider-image-visible {
   display: grid;
-  height: 80vh;
+  max-height: 80vh;
   max-width: 100%;
 }
 
@@ -243,16 +242,24 @@ select{
   border-bottom: 16vw solid transparent;
   border-left: 16vw solid rgb(77, 85, 77);
   border-top: 16vw solid transparent;
-  height: 0;
-  width: 0;
+}
+
+.arrow-right:hover {
+  border-bottom: 16vw solid transparent;
+  border-left: 16vw solid rgb(243, 243, 243);
+  border-top: 16vw solid transparent;
 }
 
 .arrow-left {
-  border-bottom: 160px solid transparent;
-  border-right: 160px solid rgb(77, 85, 77);
-  border-top: 160px solid transparent;
-  height: 0px;
-  width: 0px;
+  border-bottom: 16vw solid transparent;
+  border-right: 16vw solid rgb(77, 85, 77);
+  border-top: 16vw solid transparent;
+}
+
+.arrow-left:hover {
+  border-bottom: 16vw solid transparent;
+  border-right: 16vw solid rgb(243, 243, 243);
+  border-top: 16vw solid transparent;
 }
 
 .progress-circle {
@@ -319,4 +326,5 @@ select{
   transition-duration: 1s;
   width: 25px;
 }
+
 
