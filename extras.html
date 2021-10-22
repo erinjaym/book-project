@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="gallery.css">
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Erin Jay Moyer.com Book Extras</title> 
@@ -51,16 +52,24 @@
         <div id="slider-right" class="slider-right"><div id="arrow-right" class="arrow-right"></div></div>
       </div>
 
-    <div id="gallery" class="gallery">
-        <img onclick="startSlider('slider1')" class="image-thumbnail" src="images/BLCoverFront.jpg">
-        <img onclick="startSlider('slider2')" class="image-thumbnail" src="images/BLPBlank.jpg">
-        <img onclick="startSlider('slider3')" class="image-thumbnail" src="images/BLPromo.jpg">
-        <img onclick="startSlider('slider4')" class="image-thumbnail" src="images/19Front.jpg">
-        <img onclick="startSlider('slider5')" class="image-thumbnail" src="images/19Back.jpg">
-        <img onclick="startSlider('slider6')" class="image-thumbnail" src="images/EARHTConcept.jpg">
-        <img onclick="startSlider('slider7')" class="image-thumbnail" src="images/EARHTFront.jpg">
-        <img onclick="startSlider('slider8')" class="image-thumbnail" src="images/EARHTBack.jpg">
-        <img onclick="startSlider('slider9')" class="image-thumbnail" src="images/ITSCover.jpg">
+      <div id="gallery" class="gallery">
+        <div class="gallery-row">
+        <div class="gallery-column">
+            <img onclick="startSlider('slider1')" class="image-thumbnail" src="images/BLCoverFront.jpg">
+            <img onclick="startSlider('slider2')" class="image-thumbnail" src="images/BLPBlank.jpg">
+            <img onclick="startSlider('slider3')" class="image-thumbnail" src="images/BLPromo.jpg">
+        </div>
+        <div class="gallery-column">
+            <img onclick="startSlider('slider4')" class="image-thumbnail" src="images/19Front.jpg">
+            <img onclick="startSlider('slider5')" class="image-thumbnail" src="images/19Back.jpg">
+            <img onclick="startSlider('slider6')" class="image-thumbnail" src="images/EARHTConcept.jpg">
+        </div>
+        <div class="gallery-column">
+            <img onclick="startSlider('slider7')" class="image-thumbnail" src="images/EARHTFront.jpg">
+            <img onclick="startSlider('slider8')" class="image-thumbnail" src="images/EARHTBack.jpg">
+            <img onclick="startSlider('slider9')" class="image-thumbnail" src="images/ITSCover.jpg">
+        </div>
+        </div>
     </div>
 </div>
 </body>

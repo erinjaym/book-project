@@ -1,9 +1,14 @@
 @font-face {
-    font-family: "Graffiti";
-    src: url("./font/DonGraffiti.otf");
-  }
+  font-family: "Futura";
+  src: url("./font/FuturaBoldFont.tttf");
+}
+
+* {
+  box-sizing: border-box;
+}
 
 html {
+    background-color: #2e2b2b;
     background-image: url("./images/wall.jpg");
     background-repeat: no-repeat;
     color: white;
@@ -12,6 +17,7 @@ html {
 body{
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .book-picker{
@@ -30,7 +36,7 @@ button{
   border: 2px solid black;
   color: white;
   cursor: pointer;
-  font-size: .25em;
+  font-size: .5em;
   font-weight: bold;
   width: 100%;
 }
@@ -40,17 +46,17 @@ button:hover{
   border: 2px solid #441b1b;
   color: #441b1b;
   cursor: pointer;
-  font-size: .25em;
+  font-size: .5em;
   font-weight: bold;
   width: 100%;
 }
 
 .choices{
     color: white;
-    font-family: "Graffiti", "Times New Roman";
-    font-size: 5em;
+    font-family: "Futura", "Times New Roman";
+    font-size: 6vw;
     text-align: center;
-    text-shadow: 6px 6px #0c0303;
+    text-shadow: 5px 5px #0c0303;
 }
 
 select{
@@ -59,7 +65,7 @@ select{
     box-sizing: border-box;
     color: white;
     cursor: pointer;
-    font-size: .25em;
+    font-size: .5em;
     font-weight: bold;
     margin: 8px 0;
     min-height: fit-content;
@@ -88,7 +94,7 @@ select{
   .menu a{
     color: white;
     font-size: 6vw;
-    font-family: "Graffiti";
+    font-family: "Futura";
     text-decoration: none;
   }
 
@@ -166,30 +172,6 @@ select{
 
 .menu-button.open .menu-button-burger::after{
  transform: rotate(-45deg) translate(35px, 35px);
-}
-
-/* Extras Page */
-
-.image-thumbnail {
-  border: solid white 2px;
-  border-radius: 1%;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.gallery {
-  background-color: black;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: 1vh;
-  grid-column-gap: 1vw;
-  left: 50%;
-  padding: 20px;
-  position: absolute;
-  top: 20%;
-  transform: translate(-40vw, -10vh);
-  width: 80vw;
 }
 
 /* Slideshow POPUP */
@@ -331,19 +313,32 @@ select{
   /* Adjustment of menu and slideshow display on mobile*/
 
   @media screen and (min-width: 980px) /* Desktop */ {
-
   }
 
   @media screen  and (max-width: 979px) /* Tablet */ {
-  .menu a{
-    font-size: 8vw;
+
+  }
+
+   /* Mobile */ 
+  @media screen and (max-width: 800px) {
+    .choices{
+      font-size: 7vw;
+      text-shadow: 5px 5px #0c0303;
+  }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .choices{
+      font-size: 8vw;
+      text-shadow: 4px 4px #0c0303;
   }
   }
 
-  @media screen and (max-width: 500px) /* Mobile */ {
+  @media screen and (max-width: 400px){
 
-  .menu a{
-    font-size: 8vw;
+    .choices{
+      font-size: 8vw;
+      text-shadow: 3px 3px #0c0303;
   }
 
   }
