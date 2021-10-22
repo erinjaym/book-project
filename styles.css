@@ -179,9 +179,10 @@ select{
 .slider-popup {
   background-color: rgba(8, 8, 8, 0.11);
   display: grid;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
   grid-template-rows: 1fr .2fr;
   height: 90vh;
+  width: 100vw;
   right: 0;
   left: 0;
   position: relative;
@@ -190,7 +191,6 @@ select{
 .slider-middle {
   align-items: center;
   display: none;
-  grid-row: 0.9fr 0.1fr;
   justify-items: center;
 }
 
@@ -199,7 +199,11 @@ select{
   display: none;
   justify-items: right;
   opacity: 70%;
-  grid-row: 0.95fr 0.05fr;
+}
+
+.slider-left:hover {
+background: black;
+opacity: 60%;
 }
 
 .slider-right {
@@ -209,40 +213,42 @@ select{
   opacity: 70%;
 }
 
+.slider-right:hover {
+  background: black;
+  opacity: 60%;
+  }
+
 .slider-image {
   display: none;
-  height: 100px;
-  width: 100px;
 }
 
 .slider-image-visible {
   display: grid;
-  max-height: 80vh;
   max-width: 100%;
 }
 
 .arrow-right {
-  border-bottom: 16vw solid transparent;
-  border-left: 16vw solid rgb(77, 85, 77);
-  border-top: 16vw solid transparent;
+  border-bottom: 12vw solid transparent;
+  border-left: 12vw solid rgb(77, 85, 77);
+  border-top: 12vw solid transparent;
 }
 
 .arrow-right:hover {
-  border-bottom: 16vw solid transparent;
-  border-left: 16vw solid rgb(243, 243, 243);
-  border-top: 16vw solid transparent;
+  border-bottom: 13vw solid transparent;
+  border-left: 13vw solid rgb(243, 243, 243);
+  border-top: 13vw solid transparent;
 }
 
 .arrow-left {
-  border-bottom: 16vw solid transparent;
-  border-right: 16vw solid rgb(77, 85, 77);
-  border-top: 16vw solid transparent;
+  border-bottom: 12vw solid transparent;
+  border-right: 12vw solid rgb(77, 85, 77);
+  border-top: 12vw solid transparent;
 }
 
 .arrow-left:hover {
-  border-bottom: 16vw solid transparent;
-  border-right: 16vw solid rgb(243, 243, 243);
-  border-top: 16vw solid transparent;
+  border-bottom: 13vw solid transparent;
+  border-right: 13vw solid rgb(243, 243, 243);
+  border-top: 13vw solid transparent;
 }
 
 .progress-circle {
@@ -335,10 +341,5 @@ select{
   }
 
   @media screen and (max-width: 400px){
-
-    .choices{
-      font-size: 8vw;
-      text-shadow: 3px 3px #0c0303;
-  }
 
   }

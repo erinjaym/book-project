@@ -24,30 +24,15 @@
     <div id="slider-popup" class="slider-popup">
         <div id="slider-left" class="slider-left"><div id="arrow-left" class="arrow-left"></div></div>
         <div id="slider-middle" class="slider-middle">
-            <img id="slider1" class="slider-image" src="images/BLCoverFront.jpg">
-            <img id="slider2" class="slider-image" src="images/BLPBlank.jpg">
-            <img id="slider3" class="slider-image" src="images/BLPromo.jpg">
-            <img id="slider4" class="slider-image" src="images/19Front.jpg">
-            <img id="slider5" class="slider-image" src="images/19Back.jpg">
-            <img id="slider6" class="slider-image" src="images/EARHTConcept.jpg">
-            <img id="slider7" class="slider-image" src="images/EARHTFront.jpg">
-            <img id="slider8" class="slider-image" src="images/EARHTBack.jpg">
-            <img id="slider9" class="slider-image" src="images/ITSCover.jpg">
-          
-            <div id="slide-options" class="">
-              <div id="pause-button" class="pause"><img src="./images/pause.svg"></div>
-              <div id="circle1" class="progress-circle"></div>
-              <div id="circle2" class="progress-circle"></div>
-              <div id="circle3" class="progress-circle"></div>
-              <div id="circle4" class="progress-circle"></div>
-              <div id="circle5" class="progress-circle"></div>
-              <div id="circle6" class="progress-circle"></div>
-              <div id="circle7" class="progress-circle"></div>
-              <div id="circle8" class="progress-circle"></div>
-              <div id="circle9" class="progress-circle"></div>
-              <div id="close-slider" class="close-slider"><img src="./images/stop.svg"></div>
-
-          </div>
+            <img id="slider1" onclick="toggleSlider('slider1')" class="slider-image" src="images/BLCoverFront.jpg">
+            <img id="slider2" onclick="toggleSlider('slider2')" class="slider-image" src="images/BLPBlank.jpg">
+            <img id="slider3" onclick="toggleSlider('slider3')" class="slider-image" src="images/BLPromo.jpg">
+            <img id="slider4" onclick="toggleSlider('slider4')" class="slider-image" src="images/19Front.jpg">
+            <img id="slider5" onclick="toggleSlider('slider5')" class="slider-image" src="images/19Back.jpg">
+            <img id="slider6" onclick="toggleSlider('slider6')" class="slider-image" src="images/EARHTConcept.jpg">
+            <img id="slider7" onclick="toggleSlider('slider7')" class="slider-image" src="images/EARHTFront.jpg">
+            <img id="slider8" onclick="toggleSlider('slider8')" class="slider-image" src="images/EARHTBack.jpg">
+            <img id="slider9" onclick="toggleSlider('slider9')" class="slider-image" src="images/ITSCover.jpg">
         </div>
         <div id="slider-right" class="slider-right"><div id="arrow-right" class="arrow-right"></div></div>
       </div>
@@ -55,19 +40,19 @@
       <div id="gallery" class="gallery">
         <div class="gallery-row">
         <div class="gallery-column">
-            <img onclick="startSlider('slider1')" class="image-thumbnail" src="images/BLCoverFront.jpg">
-            <img onclick="startSlider('slider2')" class="image-thumbnail" src="images/BLPBlank.jpg">
-            <img onclick="startSlider('slider3')" class="image-thumbnail" src="images/BLPromo.jpg">
+            <img onclick="toggleSlider('slider1')" class="image-thumbnail" src="images/BLCoverFront.jpg">
+            <img onclick="toggleSlider('slider2')" class="image-thumbnail" src="images/BLPBlank.jpg">
+            <img onclick="toggleSlider('slider3')" class="image-thumbnail" src="images/BLPromo.jpg">
         </div>
         <div class="gallery-column">
-            <img onclick="startSlider('slider4')" class="image-thumbnail" src="images/19Front.jpg">
-            <img onclick="startSlider('slider5')" class="image-thumbnail" src="images/19Back.jpg">
-            <img onclick="startSlider('slider6')" class="image-thumbnail" src="images/EARHTConcept.jpg">
+            <img onclick="toggleSlider('slider4')" class="image-thumbnail" src="images/19Front.jpg">
+            <img onclick="toggleSlider('slider5')" class="image-thumbnail" src="images/19Back.jpg">
+            <img onclick="toggleSlider('slider6')" class="image-thumbnail" src="images/EARHTConcept.jpg">
         </div>
         <div class="gallery-column">
-            <img onclick="startSlider('slider7')" class="image-thumbnail" src="images/EARHTFront.jpg">
-            <img onclick="startSlider('slider8')" class="image-thumbnail" src="images/EARHTBack.jpg">
-            <img onclick="startSlider('slider9')" class="image-thumbnail" src="images/ITSCover.jpg">
+            <img onclick="toggleSlider('slider7')" class="image-thumbnail" src="images/EARHTFront.jpg">
+            <img onclick="toggleSlider('slider8')" class="image-thumbnail" src="images/EARHTBack.jpg">
+            <img onclick="toggleSlider('slider9')" class="image-thumbnail" src="images/ITSCover.jpg">
         </div>
         </div>
     </div>
