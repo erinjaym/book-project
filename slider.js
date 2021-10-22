@@ -121,16 +121,13 @@ function endSlider(){
 let gallery = document.getElementById('gallery');
 gallery.style.display = 'grid';
 }) ();
-} // endSLider ending
+} // endSlider ending
 
 function toggleSlider (sliderNumber) {
     if (!sliderActive){
-        console.log('Slider !Active');
         sliderActive = true;
         startSlider(sliderNumber);
-
     }else {
-        console.log('Slider Active');
         endSlider();
         sliderActive = false;
     }
