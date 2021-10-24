@@ -5,10 +5,11 @@
         <link rel="stylesheet" href="gallery.css">
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Erin Jay Moyer.com Book Extras</title> 
+        <title>Book Extras</title> 
     </head>
 
 <body>
+<header>
     <nav>
         <ul class="menu">
             <li><a class="menuItem" href="https://www.amazon.com/Erin-Moyer/e/B086VYGJ5S" target="_blank">About EJM</a></li>
@@ -20,8 +21,9 @@
             <div class="menu-button-burger"></div>
         </div>
     </nav>
+</header>
 
-    <div id="slider-popup" class="slider-popup">
+    <section id="slider-popup" class="slider-popup">
         <div id="slider-left" class="slider-left"><div id="arrow-left" class="arrow-left"></div></div>
         <div id="slider-middle" class="slider-middle">
             <img id="slider1" onclick="toggleSlider('slider1')" class="slider-image" src="images/BLCoverFront.jpg">
@@ -44,9 +46,9 @@
             <img id="slider18" onclick="toggleSlider('slider18')" class="slider-image" src="images/HR.jpg">
         </div>
         <div id="slider-right" class="slider-right"><div id="arrow-right" class="arrow-right"></div></div>
-      </div>
+    </section>
 
-      <div id="gallery" class="gallery">
+    <section id="gallery" class="gallery">
         <div class="gallery-row">
         <div class="gallery-column">
             <img onclick="toggleSlider('slider1')" class="image-thumbnail" src="images/BLCoverFront.jpg">
@@ -79,7 +81,7 @@
             <img onclick="toggleSlider('slider18')" class="image-thumbnail" src="images/HR.jpg">
         </div>
         </div>
-    </div>
+    </section>
 </div>
 </body>
 
