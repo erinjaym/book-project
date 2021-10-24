@@ -1,5 +1,5 @@
 let currentImage = "0";
-let lastImage = "slider9";
+let lastImage = "slider18";
 let firstImage = "slider1";
 let sliderActive = false;
 
